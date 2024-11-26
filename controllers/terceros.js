@@ -15,7 +15,7 @@ const postTerceros = async (req,res)=>{
         await tercero.save()
         res.json({tercero})
     } catch (error) {
-        res.status(400).json({error:"ocurrio un error en el regustro del tercero"})
+        res.status(400).json({error:"ocurrio un error en el registro del tercero"})
         console.log(error);
     }
 }
