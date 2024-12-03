@@ -26,7 +26,6 @@ router.post("/",[
     check("precio","el precio debe ser un valor numerico").isNumeric(),
     check("precio", "el precio debe ser un numero mayor a 0").isFloat({gt:0}),
     check("imagen","la imagen es obligatoria").notEmpty(),
-    check("la imagen debe ser una URL de texto").isString(),
     check("imagen","la imagen debe ser una URL valida").isURL(),
     check("categoria","la categoria no puede estar vacia").notEmpty(),
     check("categoria","la categoria debe ser un texto").isString(),
